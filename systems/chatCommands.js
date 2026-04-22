@@ -94,15 +94,3 @@ premium
 
   });
 };
-const { ActionRowBuilder, ButtonBuilder, ButtonStyle } = require("discord.js");
-
-module.exports.ticketPanel = async (channel) => {
-  const row = new ActionRowBuilder().addComponents(
-    new ButtonBuilder()
-      .setCustomId("ticket_open")
-      .setLabel("Open Ticket")
-      .setStyle(ButtonStyle.Success)
-  );
-
-  channel.send({ content: "🎟️ Support Panel", components: [row] });
-};
