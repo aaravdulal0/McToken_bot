@@ -1,3 +1,4 @@
+console.log("FILE STARTED");
 require("dotenv").config();
 const { Client, GatewayIntentBits } = require("discord.js");
 
